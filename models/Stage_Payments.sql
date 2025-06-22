@@ -4,4 +4,5 @@
         materialized='table'
     )
 }}
-SELECT * FROM DBT_PROJECT_DB.RAW_SCHEMA.RAW_PAYMENTS
+SELECT * FROM 
+{{source('raw_src','RAW_PAYMENTS')}}

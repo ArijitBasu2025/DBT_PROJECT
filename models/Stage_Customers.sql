@@ -5,4 +5,5 @@
     )
 }}
 SELECT *
-from DBT_PROJECT_DB.RAW_SCHEMA.RAW_CUSTOMERS
+from 
+{{source('raw_src', 'RAW_CUSTOMERS')}}

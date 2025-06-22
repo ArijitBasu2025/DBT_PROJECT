@@ -4,4 +4,5 @@
         materialized='table'
     )
 }}
-select * from DBT_PROJECT_DB.RAW_SCHEMA.RAW_PRODUCTS
+select * from 
+{{ source('raw_src', 'RAW_PRODUCTS')}}
